@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form_table</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="form-group">
+            <h3>Form to Table</h3>
+            <div class="item">
+              <label for="fname" class="placeholdertxt">First Name</label>
+              <input type="text" name="fname" id="fname" class="form" />
+            </div>
+            <div class="item">
+              <label for="lname" class="placeholdertxt">Last Name</label>
+              <input type="text" name="lname" id="lname" />
+            </div>
+            <div class="item">
+              <label for="address1" class="placeholdertxt">Street Name</label>
+              <input type="text" name="address1" id="address1" />
+            </div>
+            <div class="item">
+              <label for="address2" class="placeholdertxt">Locality</label>
+              <input type="text" name="address2" id="address2" />
+            </div>
+            <div class="item">
+              <label for="city" class="placeholdertxt">City</label>
+              <input type="text" name="city" id="city" />
+            </div>
+            <div class="item">
+              <label for="state" class="placeholdertxt">State</label>
+              <input type="text" name="state" id="state" />
+            </div>
+            <div class="item">
+              <label for="country" class="placeholdertxt">Country</label>
+              <input type="text" name="country" id="country" />
+            </div>
+            <div class="item">
+              <label for="pincode" class="placeholdertxt">Pincode</label>
+              <input type="text" maxlength="6" name="pincode" id="pincode" />
+            </div>
+            <div class="radiobtn">
+              <h5>Preference Locaation</h5>
+              <h6 class="text-muted">Must select 2 locations</h6>
+              <label for="chennai">Chennai</label>
+              <input
+                class="form-check-input"
+                type="radio"
+                name="chennai"
+                id="chennai"
+                value="chennai"
+              />
+              <label for="covai">Covai</label>
+              <input
+                class="form-check-input"
+                type="radio"
+                name="covai"
+                id="covai"
+                value="covai"
+              />
+              <label for="madurai">Madurai</label>
+              <input
+                class="form-check-input"
+                type="radio"
+                name="madurai"
+                id="madurai"
+                value="madurai"
+              />
+              <br />
+              <label for="salem">Salem</label>
+              <input
+                class="form-check-input"
+                type="radio"
+                name="salem"
+                id="salem"
+                value="Salem"
+              />
+              <label for="vellore">Vellore</label>
+              <input
+                class="form-check-input"
+                type="radio"
+                name="vellore"
+                id="vellore"
+                value="vellore"
+              />
+            </div>
+            <div class="button-group">
+              <button class="btn btn-danger" onclick="resetform()">
+                Reset
+              </button>
+              <button class="btn btn-primary" onclick="addrow().resetform()">
+                Submit
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+
+    <table class="table table-striped" id="table">
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Street Name</th>
+          <th>Locality</th>
+          <th>City</th>
+          <th>State</th>
+          <th>Country</th>
+          <th>Pincode</th>
+          <th>Place 1</th>
+          <th>Place 2</th>
+          <th>Place 3</th>
+          <th>Place 4</th>
+          <th>Place 5</th>
+        </tr>
+      </thead>
+    </table>
+  </body>
+</html>

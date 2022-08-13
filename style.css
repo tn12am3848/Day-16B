@@ -1,0 +1,18 @@
+.placeholdertxt {
+  width: 100px;
+}
+.item {
+  padding: 5px;
+}
+.form-group {
+  border: 2px solid grey;
+  width: 350px;
+  padding: 5px;
+}
+.button-group {
+  margin-left: 150px;
+  padding: 5px;
+}
+.container {
+  margin-top: 50px;
+}
